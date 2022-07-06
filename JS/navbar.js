@@ -33,3 +33,4 @@ class Navbar {
   
       nav.addEventListener('click', (e) => showPage(e));
     }
+}
