@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars, no-undef, no-return-assign */
+/* change array t */
 class Navbar {
   static show() {
   Navbar.navigate()
