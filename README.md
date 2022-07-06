@@ -1,62 +1,46 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Awesome books App 
 
-# Project Name
-
-> Description the project.
-
+> A single page application book list app that allows users to add/remove books from a list and stores in local storage
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+- HTML
+- CSS
+- Javascript
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+-  To get a local copy up and running follow these simple steps.
+-  Git clone
 
 ### Prerequisites
 
+- Basic HTML & CSS knowledge
+- Basic JavaScript knowledge
+
 ### Setup
 
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- git clone https://github.com/ecekpo/awesome-books
 
 ## Authors
 
-👤 **Author1**
+👤 **Emem Ekpo**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@git@ecekpo](https://github.com/@ecekpo)
+- Twitter: [@twitterememcookey](https://twitter.com/ememcookey)
+- LinkedIn: [LinkedIn](https://https://www.linkedin.com/in/emem-ekpo-857135234/)
 
-👤 **Author2**
+👤 **Nicholas kamau**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/businesskaniki)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/nicholas-maina-175b52233/)
+
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/@ecekpo/issues/).
 
 ## Show your support
 
@@ -65,8 +49,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 

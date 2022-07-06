@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Awesome Books</title>
+  </head>
+  <body>
+    <main>
+      
+    <header>
+          <h1 class="logo-text">Awesome books</h1>
+          <nav id="navbar">
+          </nav>
+    </header>
+    
+    <div id="book-page" class="page showing">
+      <h1 class="awesome_books">All awesome books</h1>
+      <ul id="books">
+      </ul>
+    </div>
+
+    <div id="add-page" class="form_section page disable-page">
+      <h3>Add a new book</h3>
+      <form action="/">
+        <input type="text" name="title" placeholder="Title"><br>
+        <input type="text" name="author" placeholder="Author"><br>
+        <p><button id="add" type="submit">Add</button></p>
+      </form>
+    </div>
+
+  </main>
+   
+  <!-- Script  -->
+  <script src="./JS/storage.js"></script>
+  <script src="./JS/book.js"></script>
+  <script src="./JS/ui.js"></script>
+  <script src="./JS/navbar.js"></script>
+  <script type="module">
+    UI.displayBooks()
+  </script>
+  </body>
+</html>
