@@ -1,4 +1,4 @@
-/* repaced arrrys with classes */
+/* eslint-disable no-unused-vars, no-undef, no-return-assign */
 class Navbar {
   static show() {
   Navbar.navigate()
@@ -7,13 +7,15 @@ class Navbar {
       const nav = document.getElementById('navbar');
       nav.innerHTML = `
               <ul>
-                  <li data-section="book-page" class="link active"> List </li>
+                  <li id="fastlink" data-section="book-page" class="link active"> List </li>
                   <li data-section="add-page" class="link"> Add new </li>
+                  <li data-section="contactinfo-page" class="link"> Contact </li>
               </ul>
           `;
-
+           
       const links = document.querySelectorAll('#navbar .link');
-  
+     
+
       const showPage = (e) => {
         const currentLink = e.target;
   
@@ -34,3 +36,4 @@ class Navbar {
       nav.addEventListener('click', (e) => showPage(e));
     }
 }
+const listlinks = document.querySelector('#fastlink');
