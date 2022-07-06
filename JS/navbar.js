@@ -8,13 +8,44 @@ class Navbar {
       nav.innerHTML = `
               <ul>
                   <li id="fastlink" data-section="book-page" class="link active"> List </li>
-                  <li data-section="add-page" class="link"> Add new </li>
-                  <li data-section="contactinfo-page" class="link"> Contact </li>
+                  <li id="addnew" data-section="add-page" class="link"> Add new </li>
+                  <li id="contact" data-section="contactinfo-page" class="link"> Contact </li>
               </ul>
           `;
            
       const links = document.querySelectorAll('#navbar .link');
-     
+      const bookpage = document.querySelector('.form_section');
+      const contactpage = document.querySelector('#contactinfo-page');
+      const listlinks = document.querySelector('#fastlink');
+      const addnew = document.querySelector('#addnew');
+      const books = document.querySelector('#book-page')
+      const contact = document.querySelector('#contact')
+
+      
+        bookpage.classList.add('hidden');
+        contactpage.classList.add('hidden');
+      
+        listlinks.addEventListener('click', () => {
+          books.classList.remove('hidden');
+          bookpage.classList.add('hidden');
+          contactpage.classList.add('hidden');
+        });
+      
+        addnew.addEventListener('click', () => {
+          bookpage.classList.remove('hidden');
+          books.classList.add('hidden');
+          contactpage.classList.add('hidden');
+        });
+      
+        contact.addEventListener('click', () => {
+          contactpage.classList.remove('hidden');
+          bookpage.classList.add('hidden');
+          books.classList.add('hidden');
+        });
+  
+      
+
+
 
       const showPage = (e) => {
         const currentLink = e.target;
@@ -36,4 +67,3 @@ class Navbar {
       nav.addEventListener('click', (e) => showPage(e));
     }
 }
-const listlinks = document.querySelector('#fastlink');

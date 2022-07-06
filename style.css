@@ -12,7 +12,7 @@
 }
 
 .logo-text {
-  margin-left: 510px;
+  margin-left: 650px;
 }
 
 #books {
@@ -173,4 +173,13 @@ footer {
   margin-left: 2%;
   margin-right: 2%;
   margin-bottom: 1%;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.nothidden {
+  display: block;
 }
