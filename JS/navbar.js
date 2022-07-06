@@ -1,10 +1,9 @@
 /* eslint-disable no-unused-vars, no-undef, no-return-assign */
 class Navbar {
-    static show() {
-      Navbar.navigate();
-    }
-  
-    static navigate() {
+  static show() {
+  Navbar.navigate()
+  }
+  static navigate() {
       const nav = document.getElementById('navbar');
       nav.innerHTML = `
               <ul>
@@ -12,7 +11,7 @@ class Navbar {
                   <li data-section="add-page" class="link"> Add new </li>
               </ul>
           `;
-  
+
       const links = document.querySelectorAll('#navbar .link');
   
       const showPage = (e) => {
@@ -34,4 +33,3 @@ class Navbar {
   
       nav.addEventListener('click', (e) => showPage(e));
     }
-  }
