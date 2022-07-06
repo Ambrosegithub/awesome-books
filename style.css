@@ -18,7 +18,7 @@
 #books {
   list-style-type: none;
   padding-left: 0%;
-  background: rgb(233, 226, 226);
+  background: rgb(240, 136, 136);
   border: solid 2px #666;
 }
 
@@ -125,7 +125,7 @@ header h1 {
 }
 
 #navbar ul li:hover {
-  color: blue;
+  color: rgb(0, 255, 136);
   border-radius: 5px 5px 0 0;
   cursor: pointer;
   font-weight: bolder;
