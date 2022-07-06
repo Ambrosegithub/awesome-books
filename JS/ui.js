@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars, no-undef, no-return-assign */
+/*sreplaced arrys with the classed */
 class UI {
     static displayBooks() {
       const addButton = document.getElementById('add');
