@@ -1,18 +1,18 @@
 /* replaced arrays with classes*/
 class Book {
   static save(book) {
-  const existingBooks = JSON.parse(localStorage.getItem('mybooks'));
-  const updatedBooks = [...existingBooks, book];
+  const currentBooks = JSON.parse(localStorage.getItem('mybooks'));
+  const update = [...currentBooks, book];
 
-  localStorage.setItem('mybooks', JSON.stringify(updatedBooks));
+  localStorage.setItem('mybooks', JSON.stringify(update));
 }
   
   static remove(bookId) {
-  const existingBooks = JSON.parse(localStorage.getItem('mybooks'));
-  const afterRemoved = existingBooks.filter(
+  const currentBooks = JSON.parse(localStorage.getItem('mybooks'));
+  const leftOver = currentBooks.filter(
   (book) => Number(book.id) !== Number(bookId),
 );
   
- localStorage.setItem('mybooks', JSON.stringify(afterRemoved));
+ localStorage.setItem('mybooks', JSON.stringify(leftOver));
  }
 }

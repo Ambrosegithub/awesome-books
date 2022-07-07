@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars, no-undef, no-return-assign */
+/* use classes instead of arrays */
 class UI {
   static displayBooks() {
     const addButton = document.getElementById('add');
@@ -53,9 +53,9 @@ class UI {
 
       bookList.forEach((item, index) => {
         if (index % 2 === 0) {
-          item.classList.add('grey');
+          item.classList.add('orange');
         } else {
-          item.classList.add('whiteSmoke');
+          item.classList.add('lightblue');
         }
       });
     }
@@ -98,7 +98,7 @@ class UI {
 
   static showDigitalClock() {
     const showTime = () => {
-      const clock = document.getElementById('luxon_date');
+      const clock = document.getElementById('date');
       const dt = luxon.DateTime.now();
       const theTime = `${dt.toLocaleString(luxon.DateTime.DATE_FULL)} ${dt.toLocaleString(luxon.DateTime.TIME_WITH_SECONDS)}`;
       clock.innerText = theTime;
@@ -106,6 +106,6 @@ class UI {
 
     setInterval(() => {
       showTime();
-    }, 800);
+    });
   }
 }
